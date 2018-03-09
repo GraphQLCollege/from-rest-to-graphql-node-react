@@ -1,0 +1,22 @@
+{
+  "name": "todo-client-without-api",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "todo-components": "^1.0.0",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "CYPRESS_NO_API=true concurrently --success first --kill-others --kill-others-on-fail \"yarn start\" \"yarn end-to-end-tests\"",
+    "eject": "react-scripts eject",
+    "end-to-end-tests": "node node_modules/todo-end-to-end-tests run --project node_modules/todo-end-to-end-tests"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "todo-end-to-end-tests": "^1.0.0"
+  }
+}

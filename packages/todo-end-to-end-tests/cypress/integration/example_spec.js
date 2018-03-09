@@ -92,6 +92,9 @@ describe("Todo MVC", () => {
 });
 
 function resetDatabase() {
+  if (Cypress.env("NO_API")) {
+    return;
+  }
   return cy.request(
     "DELETE",
     `localhost:${Cypress.env("API_PORT") || 4000}/todos`
