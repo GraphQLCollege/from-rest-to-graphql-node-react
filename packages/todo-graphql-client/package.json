@@ -1,6 +1,6 @@
 {
   "name": "todo-graphql-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -18,8 +18,8 @@
     "graphql-api": "node node_modules/todo-graphql-api/index.js"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "todo-end-to-end-tests": "^1.0.0",
-    "todo-graphql-api": "^1.0.0",
-    "concurrently": "^3.5.1"
+    "todo-graphql-api": "^1.0.0"
   }
 }

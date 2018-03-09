@@ -25,10 +25,10 @@
     "rest-api": "node node_modules/todo-rest-api/index.js"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "todo-end-to-end-tests": "^1.0.0",
     "todo-graphql-api": "^1.0.0",
     "todo-graphql-gateway": "^1.0.0",
-    "todo-rest-api": "^1.0.0",
-    "concurrently": "^3.5.1"
+    "todo-rest-api": "^1.0.0"
   }
 }

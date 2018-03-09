@@ -23,8 +23,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "todo-end-to-end-tests": "^1.0.0",
     "concurrently": "^3.5.1",
+    "todo-end-to-end-tests": "^1.0.0",
     "todo-rest-api": "^1.0.0"
   }
 }
