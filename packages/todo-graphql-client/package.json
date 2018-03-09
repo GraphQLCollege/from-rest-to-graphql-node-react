@@ -1,0 +1,25 @@
+{
+  "name": "todo-graphql-client",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "todo-components": "^1.0.0",
+    "unfetch": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "CYPRESS_API_PORT=5000 concurrently --success first --kill-others --kill-others-on-fail \"yarn graphql-api\" \"yarn start\" \"yarn end-to-end-tests\"",
+    "eject": "react-scripts eject",
+    "start-all": "concurrently \"yarn graphql-api\" \"yarn start\"",
+    "end-to-end-tests": "node node_modules/todo-end-to-end-tests run --project node_modules/todo-end-to-end-tests",
+    "graphql-api": "node node_modules/todo-graphql-api/index.js"
+  },
+  "devDependencies": {
+    "todo-end-to-end-tests": "^1.0.0",
+    "todo-graphql-api": "^1.0.0",
+    "concurrently": "^3.5.1"
+  }
+}

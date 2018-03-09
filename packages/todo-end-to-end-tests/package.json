@@ -1,0 +1,12 @@
+{
+  "name": "todo-end-to-end-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^2.1.0"
+  }
+}

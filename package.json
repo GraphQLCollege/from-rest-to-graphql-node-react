@@ -1,0 +1,11 @@
+{
+	"name": "from-rest-to-graphql-node-react",
+  "author": "JulianMayorga",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.9.0"
+	},
+	"scripts": {
+		"test": "lerna run test --concurrency 1 --stream"
+	}
+}

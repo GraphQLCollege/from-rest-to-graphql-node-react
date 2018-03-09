@@ -1,0 +1,30 @@
+{
+  "name": "todo-apollo-graphql-rest-client",
+  "version": "1.0.0",
+  "author": "JulianMayorga",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-boost": "^0.1.2",
+    "apollo-link-rest": "^0.2.2",
+    "graphql": "^0.13.1",
+    "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "todo-components": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "concurrently --success first --kill-others --kill-others-on-fail \"yarn rest-api\" \"yarn start\" \"yarn end-to-end-tests\"",
+    "start-all": "concurrently \"yarn rest-api\" \"yarn start\"",
+    "end-to-end-tests": "node node_modules/todo-end-to-end-tests run --project node_modules/todo-end-to-end-tests",
+    "rest-api": "node node_modules/todo-rest-api/index.js",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "todo-end-to-end-tests": "^1.0.0",
+    "concurrently": "^3.5.1",
+    "todo-rest-api": "^1.0.0"
+  }
+}

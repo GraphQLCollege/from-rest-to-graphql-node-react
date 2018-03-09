@@ -1,0 +1,27 @@
+{
+  "name": "todo-rest-client",
+  "version": "0.1.0",
+  "author": "JulianMayorga",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "todo-components": "^1.0.0",
+    "unfetch": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "concurrently --success first --kill-others --kill-others-on-fail \"yarn rest-api\" \"yarn start\" \"yarn end-to-end-tests\"",
+    "eject": "react-scripts eject",
+    "start-all": "concurrently \"yarn rest-api\" \"yarn start\"",
+    "end-to-end-tests": "node node_modules/todo-end-to-end-tests run --project node_modules/todo-end-to-end-tests",
+    "rest-api": "node node_modules/todo-rest-api"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "todo-end-to-end-tests": "^1.0.0",
+    "todo-rest-api": "^1.0.0"
+  }
+}
